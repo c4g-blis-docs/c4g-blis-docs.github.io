@@ -7,6 +7,7 @@ Starting from Spring 2022, [BLIS workgroup](https://c4g-blis-docs.github.io/) de
 - [Frequently Asked Questions](https://c4g-blis-docs.github.io/faq/)
 - [Developer guide](https://c4g-blis-docs.github.io/developer_documentation/blis_cloud/)
 
+This webpage also allows you to conduct search through the docs.
 
 ## Contributing to this repo:
 
