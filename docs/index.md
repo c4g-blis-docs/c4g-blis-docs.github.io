@@ -29,9 +29,6 @@ Our partner organization is the group of labs using the C4G BLIS tool currently.
 
 ### Main Goal
 
-* Create a version of BLIS that runs in Docker container on a cloud instance
-* Provide [documentation](blis_cloud.md) on setting up BLIS on a cloud server
-* Update user guide for BLIS to account for the new version
 
 ### Achievements
 

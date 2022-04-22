@@ -15,8 +15,8 @@ Notes as I look into the database and structure of the databases, and the backup
 
 In the BLIS download from the website, the MySQL tables are prepopulated with a structure. It's not clear if this can be recreated exactly from the various SQL files available in the data/ directory. So I dumped the databases using DBeaver and here they are:
 
-* [blis_12](dump-blis_12-202202091919.sql)
-* [blis_127](dump-blis_127-202202091919.sql)
-* [blis_revamp](dump-blis_revamp-202202091919.sql)
+* [blis_12](../assets/dump-blis_12-202202091919.sql)
+* [blis_127](../assets/dump-blis_127-202202091919.sql)
+* [blis_revamp](../assets/dump-blis_revamp-202202091919.sql)
 
 I can use this to seed a container image of BLIS on Linux.
