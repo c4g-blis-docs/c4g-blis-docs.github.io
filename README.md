@@ -1,5 +1,9 @@
-# c4g-spr22-blis.github.io
+# c4g-blis-docs.github.io
 
-This is the GitHub Pages site for the Computing for Good class - spring '22, OMSCS edition!
+This is the Documentation Pages site for the [BLIS project](http://blis.cc.gatech.edu/). The [actual site](https://c4g-blis-docs.github.io/) serves as one single place for documentations regarding BLIS project. Documentation available right now:
+- Developer guide
 
-You should [really check out the actual site instead of this README](https://c4g-spr22-blis.github.io).
+If you are contributing to this repo, please follow the steps of:
+- Add your documentations under /docs
+- Before submitting, you can test the new changes offline running `mkdocs serve`
+- After merge into the main, you can run `mkdocs gh-deploy --force` under the main branch
