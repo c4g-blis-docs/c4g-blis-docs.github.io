@@ -1,0 +1,707 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>C4G BLIS User Guide Version 3.8 - C4G BLIS Documentations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#c4g-blis-user-guide-version-38" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="C4G BLIS Documentations" class="md-header__button md-logo" aria-label="C4G BLIS Documentations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            C4G BLIS Documentations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C4G BLIS User Guide Version 3.8
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/c4g-blis-docs/c4g-blis-docs.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="C4G BLIS Documentations" class="md-nav__button md-logo" aria-label="C4G BLIS Documentations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    C4G BLIS Documentations
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/c4g-blis-docs/c4g-blis-docs.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          C4G BLIS User Guide Version 3.8
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        C4G BLIS User Guide Version 3.8
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-instruction-manual-rev-38" class="md-nav__link">
+    User Instruction Manual Rev 3.8
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Developer documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developer documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developer documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer_documentation/blis_cloud/" class="md-nav__link">
+        Running BLIS on a Cloud Provider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer_documentation/data-structure/" class="md-nav__link">
+        Database & Backup Structure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer_documentation/developer_guide_v0.1/" class="md-nav__link">
+        C4G BLIS Developer Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-instruction-manual-rev-38" class="md-nav__link">
+    User Instruction Manual Rev 3.8
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/c4g-blis-docs/c4g-blis-docs.github.io/edit/main/docs/BLIS_User_Guide_v3.8.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="c4g-blis-user-guide-version-38">C4G BLIS User Guide Version 3.8</h1>
+<h2 id="user-instruction-manual-rev-38">User Instruction Manual Rev 3.8</h2>
+<p>C4G Basic Laboratory Information System is a collaboration between Computing-for-Good (C4G) at Georgia Tech, the CDC, and participating PEPFAR countries.</p>
+<div style="page-break-after: always;"></div>
+
+<h1 id="table-of-contents">Table of contents</h1>
+<ol>
+<li><a href="#introduction">Introduction to C4G BLIS</a></li>
+<li>
+<p><a href="#startup">BLIS Start-Up Guide</a></p>
+<ol>
+<li><a href="#blis_windows">Installing BLIS For Windows</a></li>
+<li><a href="#starting_blis">Starting BLIS</a></li>
+<li><a href="#stopping_blis">Stopping BLIS</a></li>
+</ol>
+</li>
+<li>
+<p><a href="#blis_roles">Roles in BLIS</a></p>
+<ol>
+<li><a href="#director_overview">Director Overview</a></li>
+<li>
+<p><a href="#manager_overview">Manager Overview</a></p>
+<ol>
+<li><a href="#lab_configuration">Lab Configuration</a></li>
+<li><a href="#test_catalog">Test Catalog</a></li>
+<li><a href="#reports">Reports</a></li>
+<li><a href="#backup_data">Backup Data</a></li>
+</ol>
+</li>
+<li>
+<p><a href="#technician_overview">Technician Overview</a></p>
+</li>
+<li><a href="#glossary">Glossary</a></li>
+</ol>
+</li>
+</ol>
+<h1 id="introduction-to-c4g-blis">Introduction to C4G BLIS <a name="introduction"></a></h1>
+<p>The Basic Laboratory Information System, BLIS, is a freeware Web-based system that can be installed in a local, district, or national laboratory. It is a tool that can help to standardize data, which improves the ability to run useful reports and can both give a realistic picture of laboratory services and assist with staff and budget planning. With enough data, BLIS can be used to track disease prevalence over time.</p>
+<p>Features of BLIS include:
+- One-time entry of each unique patient
+- Standardization of data collected (allowable entries for specimen type, test type, patient data, reagents are set at MOH level and then entered consistently throughout a country)
+- Customization to a country’s needs
+- Ability to track lab supplies such as test kits, reagents
+- Ability to run reports as specified by a country
+- Automatic alerting of data values that may be out of range(reference ranges and panic values are set at the regional or national level)
+- Daily logs to be reviewed for data verification
+- Simple data backup to a zipped file 
+- [NEW] BLIS running on a cloud provider
+- [NEW] Manual data backup to a version of BLIS running on a remote server</p>
+<p>As with any properly implemented electronic record system, BLIS may be found over time to improve data accuracy and reduce costs in laboratories. Benefits already seen in labs using BLIS:
+- Reduced burden for technicians, as results are available soon after testing
+- Improved consistency of data entry
+- Ability to view patient history and track samples
+- Ability to aggregate data and analyze data patterns and trends at a regional or national level
+- Printed patient records in place of handwritten records
+- Printed daily logs that make the reports look like the paper forms used in the laboratory</p>
+<h1 id="blis-start-up-guide">BLIS Start-Up Guide <a name="startup"></a></h1>
+<p>There are three versions of BLIS that currently exists. </p>
+<p>Firstly, <strong>BLIS on Windows</strong> was the original version developed for end-users. Stand-alone versions, updates, and packaged content are still publicly available on the C4G BLIS home page, <a href="http://blis.cc.gatech.edu/">accessible here</a>.</p>
+<p>Secondly, <strong>BLIS on the Cloud</strong> is a newly deployed version of BLIS that is capable of running on a Cloud Provider, and was originally intended to be used as an online backup database for aggregating country-wide data for analysis. For instructions on installing <strong>BLIS on the Cloud</strong>, please see the Developer's Documentation.</p>
+<p>Thirdly, <strong>BLIS in a Devcontainer</strong> is an instantiation of BLIS that allows for developers to specify the development environment, and is intended to be used by developers only. For instructions on installing <strong>BLIS in a Devcontainer</strong>, please see the Developer's Documentation.</p>
+<h2 id="blis-for-windows">BLIS For Windows <a name="blis_windows"></a></h2>
+<p>BLIS was originally developed to run on Windows using a discontinued project called Server2Go. This packages Apache2, MySQL, PHP, and Firefox together into a package that can be run all at once on a desktop computer. BLIS on Windows is the primary way that end-users are using BLIS, but can and should be used by developers to test updates.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Installing command-line tools can be done with a Windows package manager such as <a href="https://scoop.sh/">Scoop</a>.</p>
+<ul>
+<li><code>git</code></li>
+</ul>
+<h3 id="instructions-for-installation">Instructions for Installation</h3>
+<ol>
+<li>Navigate to the <a href="http://blis.cc.gatech.edu/">C4G BLIS home page</a>. 
+B. Click on the <strong>Download</strong> tab in the top menu bar, then click <strong>Download BLIS v3.8 Complete</strong>.</li>
+<li>Follow all instructions on the Download page.</li>
+</ol>
+<h2 id="starting-blis">Starting BLIS <a name="starting_blis"></a></h2>
+<ol>
+<li>Double-click on the BLIS.exe file.</li>
+<li>A page requesting login information will appear. Enter in your login credentials.</li>
+</ol>
+<p><img src="../images/user_guide/login.png" width="50%"/> </p>
+<h2 id="stopping-blis">Stopping BLIS <a name="stopping_blis"></a></h2>
+<ol>
+<li>After your session is complete, click the <strong>Logout</strong> button in the top right pane of the screen.</li>
+<li>A popup window will appear where you can rate your experience with C4G BLIS and write any comments you may have. After entering your feedback, press the <strong>Submit</strong> button to fully logout. Alternatively, you may press <strong>Skip</strong> to logout immediately without providing any feedback. If you do not wish to logout, press <strong>CLOSE</strong>.</li>
+</ol>
+<p><img src="../images/user_guide/logout.png" width="50%"/> </p>
+<h1 id="roles-in-blis">Roles in BLIS <a name="blis_roles"></a></h1>
+<p>There are three roles in BLIS. </p>
+<p>Firstly, <strong>Directors</strong> (also referenced to as country directors) are a role held by a single individual at the management level of each country. The roles of Directors are to oversee many laboratories using BLIS, summarize data trends from uploaded patient data from across the country, and work with C4G developers to provide user feedback for future versions of BLIS.</p>
+<p>Secondly, <strong>Managers</strong> (also referenced as admin users) are the managerial supervisors of laboratories. The roles of Managers are to maintain the user permissions to individual labs and alter individual lab configurations as needed.</p>
+<p>Thirdly, <strong>Technicians</strong> are the majority of BLIS users. The role of Technicians is to enter in and verify patient data.</p>
+<h1 id="director-overview">Director Overview <a name="director_overview"></a></h1>
+<h1 id="manager-overview">Manager Overview <a name="manager_overview"></a></h1>
+<p>The manager interface allows the Manager to do the following:
+1. Add, edit, and delete users
+2. Change the laboratory configuration settings in the <strong>Lab Configuration</strong> tab in the top menu bar
+3. Generate and print reports in the <strong>Reports</strong> tab in the top menu bar</p>
+<h2 id="lab-configuration">Lab Configuration <a name="lab_configuration"></a></h2>
+<p>The laboratory configuration can be changed by Managers or admin users of BLIS. Here, you can change how reports are generated, what patient data is collected, as well as various other settings. In general, laboratory settings are usually initialized by the Country Director, but can be modified to suit individual labs' needs.</p>
+<p>The menu selection for the <strong>Lab Configuration</strong> tab - accessible in the top menu bar - is as follows:
+1. <a href="#summary">Summary</a>
+2. <a href="#tests">Tests</a>
+3. <a href="#search">Search</a>
+4. <a href="#reports">Reports</a>
+5. <a href="#results">Results</a>
+6. <a href="#sites">Sites</a>
+7. <a href="#inventory">Inventory</a>
+8. <a href="#barcode_settings">Barcode Settings</a>
+9. <a href="#billing">Billing</a>
+10. <a href="#user_accounts">User Accounts</a>
+11. <a href="#registration_fields">Registration Fields</a>
+12. <a href="#doctor_registration_fields">Doctor Registration Fields</a>
+13. <a href="#modify_language">Modify Language</a>
+14. <a href="#setup_local_network">Setup Local Network</a>
+15. <a href="#blis_online">BLIS Online</a>
+16. <a href="#external_interface">External Interface</a>
+17. <a href="#revert_to_backup">Revert to Backup</a>
+18. <a href="#manage_backup_keys">Manage Backup Keys</a>
+19. <a href="#export_configuration">Export Configuration</a></p>
+<h3 id="summary">Summary <a name="summary"></a></h3>
+<p>The <strong>Summary</strong> page displays information about the laboratory. Specific information includes the Facility Name, Location, Lab Manager, available Specimen Types, available Test Types, and Technician Accounts allocated to the specific laboratory.</p>
+<p><img src="../images/user_guide/lab_configuration.png" width="50%"/></p>
+<h3 id="tests">Tests <a name="tests"></a></h3>
+<p>The <strong>Tests</strong> page has a drop down menu that opens up to reveal three different options: <strong>Specimen/Test Types</strong>, <strong>Target TAT</strong>, and <strong>Results Interpretation</strong>.</p>
+<h4 id="specimentest-types">Specimen/Test Types</h4>
+<p>The <strong>Specimen/Test Types</strong> page allows you to set the specimen and test types as appropriate for your country. Click <strong>Show</strong> to reveal hidden panes and <strong>Hide</strong> to close the panes. Check the box for each specimen type collected or test done at this facility, and click <strong>Submit</strong> to save.</p>
+<p><img src="../images/user_guide/specimen_test_type.png" width="50%"/></p>
+<h4 id="target-tat">Target TAT</h4>
+<p>The <strong>Target TAT</strong> page displays turnaround times for tests. To enter or change turnaround time, click <strong>Edit</strong>. The number and unit (such as “24 hours”) change to a text field and a drop-down list. Enter the desired number and choose <strong>Hours</strong> or <strong>Days</strong>. When finished, click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard changes. These options are below the list.</p>
+<p><img src="../images/user_guide/target_tat.png" width="50%"/></p>
+<h3 id="results-interpretation">Results Interpretation</h3>
+<p>The <strong>Results Interpretation</strong> page allows you to specify the interpretation for multiple ranges of values for each test type. To view or edit an existing test’s result, choose the test type from the drop-down list and click the <strong>Search</strong> button. The current interpretation appears. Edit using the text boxes.</p>
+<p>To add a new range to the list, click the <strong>Add Another</strong> link and enter data in the text boxes. Click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard them.</p>
+<p><img src="../images/user_guide/results_interpretation.png" width="50%"/></p>
+<h3 id="search">Search <a name="search"></a></h3>
+<p>The <strong>Search</strong> page allows you to configure what results are displayed for each patient when a search is executed. It also allows you to change how many results are displayed on each page.</p>
+<p><img src="../images/user_guide/search.png" width="50%"/></p>
+<h3 id="reports">Reports <a name="reports"></a></h3>
+<p>The <strong>Reports</strong> page has a drop down menu that opens up to reveal seven different options: <strong>Infection Report</strong>, <strong>Test/Specimen Grouped Reports</strong>, <strong>Daily Report Settings</strong>, <strong>Enable/Disable Test Reports</strong>, <strong>Test Report Configuration</strong>, <strong>Worksheet</strong>, and <strong>Order Patient Fields</strong>.</p>
+<h3 id="infection-report">Infection Report</h3>
+<p>The <strong>Infection Report</strong> page generates an aggregate report of laboratory test results for a particular period for one or all lab sections. The tests listed in the report are the ones checked to include on the <strong>Specimen/Test Types</strong> page. Click <strong>Edit</strong> to make changes to the details reported. When finished, click <strong>Submit</strong> button to save changes, <strong>Preview</strong> to view the report, or <strong>Cancel</strong> to discard changes.</p>
+<p><img src="../images/user_guide/infection_report.png" width="50%"/></p>
+<h3 id="testspecimen-grouped-reports">Test/Specimen Grouped Reports</h3>
+<p>The <strong>Test/Specimen Grouped Reports</strong> page allows you to set the <strong>Test Count (Grouped) Report</strong> settings and the <strong>Specimen Count (Grouped) Report</strong> settings. Click <strong>Edit</strong> to change settings. When finished, click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard changes. </p>
+<p><img src="../images/user_guide/test_specimen_grouped_reports.png" width="50%"/></p>
+<h3 id="daily-report-settings">Daily Report Settings</h3>
+<p>The <strong>Daily Report Settings</strong> page allows you to set the layout of the <strong>Patient Report</strong>, <strong>Daily Log - Specimens</strong>, and <strong>Daily Log - Patients</strong>. Use the drop-down to select the report type, then click <strong>Search</strong>. Check or un-check boxes to show or hide patient, specimen, and test information. If desired, you can upload a .jpg logo file to appear on the report. When finished, click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard changes. These options are below the list.</p>
+<p><img src="../images/user_guide/test_specimen_grouped_reports.png" width="50%"/></p>
+<h3 id="enabledisable-test-results">Enable/Disable Test Results</h3>
+<p>The <strong>Enable/Disable Test Results</strong> page allows you to enable or disable specific tests. Items on the left side are disabled; move the test items to the right side to enable them. When finished, click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard changes.</p>
+<p><img src="../images/user_guide/enable_disable_test_results.png" width="50%"/></p>
+<h3 id="test-report-configuration">Test Report Configuration</h3>
+<p>The <strong>Test Report Configuration</strong> page allows you to visualize your enabled test configurations. Use the drop-down to select the test type from the enabled test list, then click <strong>Search</strong>. Click <strong>Edit</strong> to edit the configuration of the reported test data. Check or un-check boxes to show or hide patient, specimen, and test information. When finished, click the <strong>Submit</strong> button to save changes, or <strong>Cancel</strong> to discard changes</p>
+<h3 id="worksheet">Worksheet</h3>
+<p>The <strong>Worksheet</strong> page allows you to create templates for gather patient data in the lab. In lab settings where data are not entered at the point of service, the data entry staff can enter the laboratory's patient information and ordered tests, then print the worksheet so that lab technicians can write test results and other data to be entered into BLIS. </p>
+<p>Select the <strong>Lab Section</strong> and <strong>Test Type</strong> and click <strong>Search</strong> to edit the report format. To edit a custom report, click <strong>Edit</strong> to the right of the report. To create a new custom worksheet, click the <strong>Add Custom Worksheet</strong> link at the bottom of the list.</p>
+<p><img src="../images/user_guide/worksheet.png" width="50%"/></p>
+<h3 id="results">Results <a name="results"></a></h3>
+<p>The <strong>Results</strong> page allows you to edit the parameters displayed in the batch results page. Currently, the editable data is limited to Patient information.</p>
+<p><img src="../images/user_guide/results.png" width="50%"/></p>
+<h3 id="sites">Sites <a name="sites"></a></h3>
+<p>The <strong>Sites</strong> page allows you to add, modify, or remove specimen collection sites to the laboratory records. When first spawning a laboratory, only one site - the default site - will exist. </p>
+<p>Additional information about the site can be provided in the textboxes - currently, BLIS supports adding in District and Region information. To add another site, click on the <strong>Add Another</strong> hyperlink at the top and fill in textbox with the new site name, then click <strong>Submit</strong>. To go back, click <strong>Cancel</strong>. </p>
+<p><img src="../images/user_guide/sites.png" width="50%"/></p>
+<h3 id="inventory">Inventory <a name="inventory"></a></h3>
+<p>The <strong>Inventory</strong> page is a list of any existing reagents being tracked in BLIS. To add another, click the
+<strong>Add Item</strong> link above the list and input the name, unit of measurement associated with the reagent, and any miscellaneous remarks about the reagent. After pressing <strong>Submit</strong>, don't forget to add the item's stock. On the <strong>Current Inventory</strong> page, you can <strong>Log Stock Usage</strong>, <strong>Add Stock</strong>, or <strong>Edit Details</strong>.</p>
+<p><img src="../images/user_guide/inventory.png" width="50%"/></p>
+<h3 id="barcode-settings">Barcode Settings <a name="barcode_settings"></a></h3>
+<p>The <strong>Barcode Settings</strong> page allows you to configure the settings for barcode formats. Click on the <strong>Page Help</strong> for more details. After changing the settings, click <strong>Submit</strong> to save your edits.</p>
+<p><img src="../images/user_guide/barcode_settings.png" width="50%"/></p>
+<h3 id="user-accounts">User Accounts <a name="user_accounts"></a></h3>
+<h3 id="registration-fields">Registration Fields <a name="registration_fields"></a></h3>
+<h3 id="doctor-registration-fields">Doctor Registration Fields <a name="doctor_registration_fields"></a></h3>
+<h3 id="modify-language">Modify Language <a name="modify_language"></a></h3>
+<h3 id="setup-local-network">Setup Local Network <a name="modify_language"></a></h3>
+<h3 id="blis-online">BLIS Online <a name="blis_online"></a></h3>
+<p>The <strong>BLIS Online</strong> page allows you to enter an IP address of a <strong>BLIS on the Cloud</strong> server. For more details about <strong>BLIS on the Cloud</strong> and how to create your own instantiation, please read the Developer's Documentation.</p>
+<p>Please enter the IP address into the text box and click <strong>Submit</strong>. A message stating "BLIS Cloud hostname updated successfully!" will pop up if submitted correctly. </p>
+<p><img src="../images/user_guide/blis_online.png" width="50%"/></p>
+<h3 id="external-interface">External Interface <a name="external_interface"></a></h3>
+<h3 id="revert-to-backup">Revert to Backup <a name="revert_to_backup"></a></h3>
+<h3 id="manage-backup-keys">Manage Backup Keys <a name="manage_backup_keys"></a></h3>
+<p>The <strong>Manage Backup Keys</strong> page allows you to create, manage, or delete key pairs in order to encrypt laboratory backup data. Encrypting laboratory backup data with a unique key-pair ensures that only the personnel with the correct private key will be able to successfully decrypt the encrypted data with the correlated public key.</p>
+<p>The home screen of the <strong>Manage Backup Keys</strong> page displays the list of currently active public keys. In the example image below, only one public key is available for use, with a key alias of "my_pubkey".</p>
+<p><img src="../images/user_guide/manage_backup_keys.png" width="50%"/></p>
+<h4 id="disable-encrypted-backups">Disable Encrypted Backups</h4>
+<p>Toggle this button to disable or enable encrypted backups. It is recommended to enable encrypted backups to protect private patient information.</p>
+<h4 id="download-public-key">Download Public Key</h4>
+<p>This button opens a popup window prompting the user to download a public key. This key should be saved onto the computer.</p>
+<p><img src="../images/user_guide/download_public_key.png" width="50%"/></p>
+<h4 id="add-key-alias">Add Key Alias</h4>
+<p>To add a new public key, click <strong>Add Key Alias</strong>. Fill free to enter in any key alias names here. We recommend entering in some identifying information that describes the origin of the public key. For example, if the public key was provided by the country director, the key alias name could be "country_director_pubkey".</p>
+<p>To upload the public key, click <strong>Browse</strong> and use the File Upload navigational controls to select the desired public key (ending in a .blis file extension). After selecting the correct public key, click <strong>Add</strong> to add the public key to the list of currently active public keys, or <strong>Cancel</strong> to discard changes.</p>
+<p><img src="../images/user_guide/add_key_alias.png" width="50%"/></p>
+<h3 id="export-configuration">Export Configuration <a name="export_configuration"></a></h3>
+<h2 id="test-catalog">Test Catalog <a name="test_catalog"></a></h2>
+<h2 id="reports_1">Reports <a name="reports"></a></h2>
+<h2 id="backup-data">Backup Data <a name="backup_data"></a></h2>
+<p>The <strong>Backup Data</strong> feature was created for two reasons - to revert to a previously backed-up copy in cases of system failure, but also to create a backup file of the current laboratory patient data for uploading to a <strong>BLIS on Cloud</strong> version. </p>
+<p>For example, one intended use of the second scenario would be to upload the current laboratory data to the director's instantiation of BLIS. A conglomeration of multiple labs' data would permit the director to visualize larger trends in the healthcare data across several laboratories. This would aid the director in understanding the needs of individual labs, and permit them to mobilize aid catered to the specific needs of each laboratories.</p>
+<p>The below image is the default view of the <strong>Backup Data</strong> page.</p>
+<p><img src="../images/user_guide/backup_data.png" width="50%"/></p>
+<h3 id="backup-data-with-pre-existing-key">Backup Data with Pre-Existing Key</h3>
+<p>If a public key has already been registered to the personnel account through the <strong>Lab Configuration</strong> &gt; <strong>Manage Backup Keys</strong> functionality, then the key should appear in the drop-down menu. In the image below, <em>my_pubkey</em> is a pre-existing public key that had been previously registered. Please select the key from the drop-down menu.</p>
+<p><img src="../images/user_guide/backup_data_preexisting_key.png" width="50%"/></p>
+<h3 id="backup-data-without-pre-existing-key">Backup Data without Pre-Existing Key</h3>
+<p>If the desired public key has not already been registered to the account, then please select <em>New Key...</em> from the drop-down menu. Two new boxes should appear. Give the key a name (recommend either the lab name or lab ID), and click on the <strong>Browse</strong> button. Find the public key that was previously downloaded onto your computer and select it to upload.</p>
+<p><img src="../images/user_guide/backup_data_no_preexisting_key.png" width="50%"/></p>
+<p>After selecting the public key of choice, please choose the desired backup (General or Anonymized) and then click <strong>Backup</strong> to trigger the data backup. A new page should pop up, confirming that the backup was successful. Please click the <strong>Download Zip</strong> hyperlink to download the zipped file to your Desktop. </p>
+<p>Additionally, if a Backup IP Address was previously set in <strong>Lab Configuration</strong> &gt; <strong>BLIS Online</strong> page, a copy of the backup will be sent to the BLIS version hosted on the specified IP Address.</p>
+<p><img src="../images/user_guide/download_successful.png" width="50%"/></p>
+<h2 id="technician-overview">Technician Overview <a name="technician_overview"></a></h2>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-04-25
+    
+  </small>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: Frequently Asked Questions" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Frequently Asked Questions
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+    
+  </body>
+</html>
