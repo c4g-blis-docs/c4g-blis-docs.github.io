@@ -25,3 +25,8 @@ theme:
     repo: fontawesome/brands/github
   features:
     - search.suggest
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
