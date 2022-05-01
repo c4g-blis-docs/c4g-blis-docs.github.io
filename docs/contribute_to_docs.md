@@ -1,15 +1,11 @@
-# c4g-blis-docs.github.io
+# Contribute to documentations
 
 ## What this repo is for?
-This is the Documentation Pages site for the [BLIS project](http://blis.cc.gatech.edu/). 
-
-The [actual site](https://c4g-blis-docs.github.io/) serves as one single place for documentations regarding BLIS Tool.
-
 Starting from Spring 2022, [BLIS workgroup](https://c4g-blis-docs.github.io/) decides to move all documentation regarding BLIS into one place for accessibility, maintainability and readability. In the current plan, this repo will includes following assets:
 
-- [User Guide](/docs/index.md)
-- [Frequently Asked Questions](/docs/faq.md)
-- [Developer guide](/docs/developer_documentation/developer_guide_v0.1.md)
+- [User Guide](./BLIS_User_Guide_v3.8.md)
+- [Frequently Asked Questions](./faq.md)
+- [Developer guide](./developer_documentation/developer_guide_v0.1.md)
 
 This webpage also allows you to conduct search through the docs.
 
